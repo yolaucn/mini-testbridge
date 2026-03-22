@@ -1,0 +1,20 @@
+{
+  "name": "mini-testbridge",
+  "version": "1.0.0",
+  "description": "A lightweight testing bridge for WeChat Mini Programs",
+  "main": "src/index.js",
+  "keywords": ["miniprogram", "wechat", "testing", "automation", "bridge"],
+  "author": "yolaucn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yolaucn/mini-testbridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yolaucn/mini-testbridge/issues"
+  },
+  "homepage": "https://github.com/yolaucn/mini-testbridge#readme",
+  "files": [
+    "src/"
+  ]
+}
