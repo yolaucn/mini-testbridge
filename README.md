@@ -13,7 +13,33 @@
 ## 安装
 
 ```bash
-npm install mini-testbridge
+npm install @yolaucn/mini-testbridge
+```
+
+## 发布流程
+
+本项目使用 GitHub Actions 自动发布到 GitHub Packages。
+
+### 自动发布
+
+1. 推送代码到主分支会触发 CI 测试
+2. 创建新的 Release 会自动发布到 GitHub Packages
+
+### 手动发布步骤
+
+1. 更新 `package.json` 中的版本号
+2. 提交并推送代码
+3. 在 GitHub 上创建新的 Release
+4. GitHub Actions 会自动构建并发布包
+
+### 安装已发布的包
+
+```bash
+# 配置 npm 使用 GitHub Packages
+echo "@yolaucn:registry=https://npm.pkg.github.com" >> .npmrc
+
+# 安装包
+npm install @yolaucn/mini-testbridge
 ```
 
 ## 快速开始

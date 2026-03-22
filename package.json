@@ -1,6 +1,6 @@
 {
-  "name": "mini-testbridge",
-  "version": "1.0.0",
+  "name": "@yolaucn/mini-testbridge",
+  "version": "1.0.1",
   "description": "A lightweight testing bridge for WeChat Mini Programs",
   "main": "src/index.js",
   "keywords": ["miniprogram", "wechat", "testing", "automation", "bridge"],
@@ -14,7 +14,14 @@
     "url": "https://github.com/yolaucn/mini-testbridge/issues"
   },
   "homepage": "https://github.com/yolaucn/mini-testbridge#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "files": [
     "src/"
-  ]
+  ],
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "prepublishOnly": "echo \"Preparing for publish...\""
+  }
 }

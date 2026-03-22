@@ -1,0 +1,9 @@
+<view>
+  <button>登录</button>
+  <input value="{{phone}}" />
+  <button>提交</button>
+
+  <view wx:if="{{success}}">
+    成功
+  </view>
+</view>
