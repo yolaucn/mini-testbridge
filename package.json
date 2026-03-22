@@ -1,5 +1,5 @@
 {
-  "name": "@yolaucn/mini-testbridge",
+  "name": "mini-testbridge",
   "version": "1.0.3",
   "description": "A lightweight testing bridge for WeChat Mini Programs",
   "main": "src/index.js",
@@ -20,9 +20,6 @@
     "url": "https://github.com/yolaucn/mini-testbridge/issues"
   },
   "homepage": "https://github.com/yolaucn/mini-testbridge#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "files": [
     "src/"
   ],

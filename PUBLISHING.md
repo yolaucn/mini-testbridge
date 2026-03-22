@@ -1,16 +1,29 @@
 # 发布指南
 
-## 自动发布流程
+## 发布到 npmjs.com
 
-本项目配置了 GitHub Actions 来自动发布 npm 包到 GitHub Packages。
+本项目现在配置为发布到 npmjs.com，这是全球最大的 JavaScript 包注册表。
 
-### 方式一：通过 Release 发布（推荐）
+### 配置要求
+
+在使用自动发布之前，需要在 GitHub 仓库设置中添加 NPM_TOKEN：
+
+1. 登录 [npmjs.com](https://www.npmjs.com)
+2. 进入 Account Settings > Access Tokens
+3. 创建一个新的 Automation token
+4. 在 GitHub 仓库的 Settings > Secrets and variables > Actions 中添加：
+   - Name: `NPM_TOKEN`
+   - Value: 你的 npm token
+
+### 自动发布流程
+
+#### 方式一：通过 Release 发布（推荐）
 
 1. 更新 `package.json` 中的版本号：
    ```bash
-   npm version patch  # 补丁版本 (1.0.1 -> 1.0.2)
-   npm version minor  # 次要版本 (1.0.1 -> 1.1.0)  
-   npm version major  # 主要版本 (1.0.1 -> 2.0.0)
+   npm version patch  # 补丁版本 (1.0.3 -> 1.0.4)
+   npm version minor  # 次要版本 (1.0.3 -> 1.1.0)  
+   npm version major  # 主要版本 (1.0.3 -> 2.0.0)
    ```
 
 2. 推送代码和标签：
@@ -28,42 +41,31 @@
 4. GitHub Actions 会自动：
    - 运行测试
    - 构建包
-   - 发布到 GitHub Packages
+   - 发布到 npmjs.com
 
-### 方式二：通过标签发布
+#### 方式二：通过标签发布
 
 1. 创建并推送标签：
    ```bash
-   git tag v1.0.2
-   git push origin v1.0.2
+   git tag v1.0.4
+   git push origin v1.0.4
    ```
 
 2. GitHub Actions 会自动创建 Release 并发布包
 
-## 使用已发布的包
-
-### 配置 npm
-
-在项目根目录创建或更新 `.npmrc` 文件：
-```
-@yolaucn:registry=https://npm.pkg.github.com
-```
-
-### 安装包
+### 使用已发布的包
 
 ```bash
-npm install @yolaucn/mini-testbridge
+npm install mini-testbridge
 ```
 
-### 身份验证
+### 在项目中使用
 
-如果需要安装私有包，需要配置 GitHub Personal Access Token：
-
-1. 在 GitHub 创建 Personal Access Token（需要 `read:packages` 权限）
-2. 配置 npm：
-   ```bash
-   npm login --scope=@yolaucn --registry=https://npm.pkg.github.com
-   ```
+```javascript
+const { register, tap, input, run } = require('mini-testbridge')
+// 或者
+import { register, tap, input, run } from 'mini-testbridge'
+```
 
 ## 工作流说明
 
@@ -74,7 +76,7 @@ npm install @yolaucn/mini-testbridge
 
 ### 发布工作流 (`.github/workflows/publish.yml`)
 - 在创建 Release 时触发
-- 自动发布到 GitHub Packages
+- 自动发布到 npmjs.com
 
 ### Release 工作流 (`.github/workflows/release.yml`)
 - 在推送标签时触发
@@ -83,11 +85,17 @@ npm install @yolaucn/mini-testbridge
 ## 故障排除
 
 ### 发布失败
-1. 检查 package.json 中的版本号是否正确
-2. 确保 GitHub Actions 有足够的权限
+1. 检查 NPM_TOKEN 是否正确配置
+2. 确保 package.json 中的版本号是新的（不能重复发布相同版本）
 3. 检查工作流日志中的错误信息
+4. 确保你有发布该包的权限
 
-### 安装失败
-1. 确保 .npmrc 配置正确
-2. 检查网络连接和 GitHub Packages 状态
-3. 验证包名和版本号是否正确
+### 版本冲突
+如果遇到版本已存在的错误：
+```bash
+npm version patch  # 增加版本号
+git push origin main --tags
+```
+
+### 权限问题
+确保你的 npm 账户有发布 `mini-testbridge` 包的权限。如果是第一次发布，包名会自动归属于你的账户。

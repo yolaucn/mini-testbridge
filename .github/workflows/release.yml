@@ -1,4 +1,4 @@
-name: Create Release
+name: Create Release and Publish
 
 on:
   push:
@@ -8,9 +8,6 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      packages: write
     
     steps:
       - name: Checkout code
@@ -20,8 +17,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@yolaucn'
+          registry-url: 'https://registry.npmjs.org'
       
       - name: Install dependencies
         run: npm install --only=production
@@ -36,7 +32,7 @@ jobs:
           draft: false
           prerelease: false
       
-      - name: Publish to GitHub Packages
+      - name: Publish to npmjs
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
