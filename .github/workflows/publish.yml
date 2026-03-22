@@ -23,7 +23,7 @@ jobs:
           scope: '@yolaucn'
       
       - name: Install dependencies
-        run: npm ci
+        run: npm install --only=production
       
       - name: Publish to GitHub Packages
         run: npm publish

@@ -24,7 +24,7 @@ jobs:
           scope: '@yolaucn'
       
       - name: Install dependencies
-        run: npm ci
+        run: npm install --only=production
       
       - name: Create Release
         uses: actions/create-release@v1
