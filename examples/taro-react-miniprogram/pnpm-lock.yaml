@@ -51,8 +51,8 @@ importers:
         specifier: 3.6.25
         version: 3.6.25(@tarojs/helper@3.6.25)(@tarojs/runtime@3.6.25(@tarojs/shared@3.6.25))(@types/react@18.3.28)(postcss@8.5.8)
       mini-testbridge:
-        specifier: ^1.0.7
-        version: 1.0.7
+        specifier: ^1.1.0
+        version: 1.1.0
       react:
         specifier: ^18.0.0
         version: 18.3.1
@@ -77,10 +77,13 @@ importers:
         version: 7.14.5(@babel/core@7.29.0)
       '@tarojs/cli':
         specifier: 3.6.25
-        version: 3.6.25(@tarojs/taro@3.6.25(@tarojs/helper@3.6.25)(@tarojs/runtime@3.6.25(@tarojs/shared@3.6.25))(@types/react@18.3.28)(postcss@8.5.8))(@types/node@25.5.0)
+        version: 3.6.25(@tarojs/taro@3.6.25(@tarojs/helper@3.6.25)(@tarojs/runtime@3.6.25(@tarojs/shared@3.6.25))(@types/react@18.3.28)(postcss@8.5.8))(@types/node@18.19.130)
       '@tarojs/webpack5-runner':
         specifier: 3.6.25
         version: 3.6.25(@babel/core@7.29.0)(@swc/core@1.3.96)(@tarojs/components@3.6.25(@tarojs/helper@3.6.25)(@tarojs/runtime@3.6.25(@tarojs/shared@3.6.25))(@tarojs/shared@3.6.25)(@types/react@18.3.28)(postcss@8.5.8)(react@18.3.1))(@tarojs/runtime@3.6.25(@tarojs/shared@3.6.25))(@tarojs/shared@3.6.25)(@tarojs/taro@3.6.25(@tarojs/helper@3.6.25)(@tarojs/runtime@3.6.25(@tarojs/shared@3.6.25))(@types/react@18.3.28)(postcss@8.5.8))(@types/react@18.3.28)(@vue/compiler-sfc@3.5.30)(postcss@8.5.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.9.5)(webpack@5.78.0(@swc/core@1.3.96))
+      '@types/node':
+        specifier: ^18.0.0
+        version: 18.19.130
       '@types/react':
         specifier: ^18.0.0
         version: 18.3.28
@@ -1488,8 +1491,8 @@ packages:
   '@types/node-forge@1.3.14':
     resolution: {integrity: sha512-mhVF2BnD4BO+jtOp7z1CdzaK4mbuK0LLQYAvdOLqHTavxFNq4zA1EmYkpnFjP8HOUzedfQkRnp0E2ulSAYSzAw==}
 
-  '@types/node@25.5.0':
-    resolution: {integrity: sha512-jp2P3tQMSxWugkCUKLRPVUpGaL5MVFwF8RDuSRztfwgN1wmqJeMSbKlnEtQqU8UrhTmzEmZdu2I6v2dpp7XIxw==}
+  '@types/node@18.19.130':
+    resolution: {integrity: sha512-GRaXQx6jGfL8sKfaIDD6OupbIHBr9jv7Jnaml9tB7l4v068PAOXqfcujMMo5PhbIs6ggR1XODELqahT2R8v0fg==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -4563,8 +4566,8 @@ packages:
     peerDependencies:
       webpack: ^5.0.0
 
-  mini-testbridge@1.0.7:
-    resolution: {integrity: sha512-38ZjRRPZOy0cbmkZDSm02Bwfg+j0KuonfNKTzggZKOak7ItkMvh9SEOELLLkasgyT4dM3UdZeCs/jpmLFjGmxQ==}
+  mini-testbridge@1.1.0:
+    resolution: {integrity: sha512-AXLPirNQ4qJgvDu1FODmt+ixr3QSDBmEqCswwu6xWtjyibEa5uYkU43672B+U/a1iCCMgrA8PZLHtbXxp6tawg==}
 
   minimalistic-assert@1.0.1:
     resolution: {integrity: sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==}
@@ -6162,8 +6165,8 @@ packages:
   unbzip2-stream@1.4.3:
     resolution: {integrity: sha512-mlExGW4w71ebDJviH16lQLtZS32VKqsSfk80GCfUlwT/4/hNRFsoscrF/c++9xinkMzECL1uL9DDwXqFWkruPg==}
 
-  undici-types@7.18.2:
-    resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
+  undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
   unescape-js@1.1.4:
     resolution: {integrity: sha512-42SD8NOQEhdYntEiUQdYq/1V/YHwr1HLwlHuTJB5InVVdOSbgI6xu8jK5q65yIzuFCfczzyDF/7hbGzVbyCw0g==}
@@ -7508,12 +7511,12 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@inquirer/external-editor@1.0.3(@types/node@25.5.0)':
+  '@inquirer/external-editor@1.0.3(@types/node@18.19.130)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.2
     optionalDependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -7528,7 +7531,7 @@ snapshots:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
       '@types/yargs': 15.0.20
       chalk: 4.1.2
 
@@ -7689,7 +7692,7 @@ snapshots:
       '@tarojs/binding-linux-x64-gnu': 3.6.25
       '@tarojs/binding-win32-x64-msvc': 3.6.25
 
-  '@tarojs/cli@3.6.25(@tarojs/taro@3.6.25(@tarojs/helper@3.6.25)(@tarojs/runtime@3.6.25(@tarojs/shared@3.6.25))(@types/react@18.3.28)(postcss@8.5.8))(@types/node@25.5.0)':
+  '@tarojs/cli@3.6.25(@tarojs/taro@3.6.25(@tarojs/helper@3.6.25)(@tarojs/runtime@3.6.25(@tarojs/shared@3.6.25))(@types/react@18.3.28)(postcss@8.5.8))(@types/node@18.19.130)':
     dependencies:
       '@tarojs/binding': 3.6.25
       '@tarojs/helper': 3.6.25
@@ -7702,7 +7705,7 @@ snapshots:
       envinfo: 7.21.0
       eslint: 8.57.1
       glob: 7.2.3
-      inquirer: 8.2.7(@types/node@25.5.0)
+      inquirer: 8.2.7(@types/node@18.19.130)
       latest-version: 5.1.0
       lodash: 4.17.23
       minimist: 1.2.8
@@ -8155,20 +8158,20 @@ snapshots:
   '@types/body-parser@1.19.6':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@types/bonjour@3.5.13':
     dependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@types/connect-history-api-fallback@1.5.4':
     dependencies:
       '@types/express-serve-static-core': 5.1.1
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@types/debug@4.1.13':
     dependencies:
@@ -8188,14 +8191,14 @@ snapshots:
 
   '@types/express-serve-static-core@4.19.8':
     dependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
       '@types/qs': 6.15.0
       '@types/range-parser': 1.2.7
       '@types/send': 1.2.1
 
   '@types/express-serve-static-core@5.1.1':
     dependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
       '@types/qs': 6.15.0
       '@types/range-parser': 1.2.7
       '@types/send': 1.2.1
@@ -8209,12 +8212,12 @@ snapshots:
 
   '@types/fs-extra@8.1.5':
     dependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 6.0.0
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@types/html-minifier-terser@6.1.0': {}
 
@@ -8222,7 +8225,7 @@ snapshots:
 
   '@types/http-proxy@1.17.17':
     dependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@types/istanbul-lib-coverage@2.0.6': {}
 
@@ -8240,7 +8243,7 @@ snapshots:
 
   '@types/keyv@3.1.4':
     dependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@types/lodash.debounce@4.0.9':
     dependencies:
@@ -8262,11 +8265,11 @@ snapshots:
 
   '@types/node-forge@1.3.14':
     dependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
-  '@types/node@25.5.0':
+  '@types/node@18.19.130':
     dependencies:
-      undici-types: 7.18.2
+      undici-types: 5.26.5
 
   '@types/normalize-package-data@2.4.4': {}
 
@@ -8285,7 +8288,7 @@ snapshots:
 
   '@types/responselike@1.0.3':
     dependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@types/retry@0.12.0': {}
 
@@ -8298,11 +8301,11 @@ snapshots:
   '@types/send@0.17.6':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@types/send@1.2.1':
     dependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@types/serve-index@1.9.4':
     dependencies:
@@ -8311,16 +8314,16 @@ snapshots:
   '@types/serve-static@1.15.10':
     dependencies:
       '@types/http-errors': 2.0.5
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
       '@types/send': 0.17.6
 
   '@types/sockjs@0.3.36':
     dependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
 
   '@types/yargs-parser@21.0.3': {}
 
@@ -11009,9 +11012,9 @@ snapshots:
       strip-ansi: 6.0.1
       through: 2.3.8
 
-  inquirer@8.2.7(@types/node@25.5.0):
+  inquirer@8.2.7(@types/node@18.19.130):
     dependencies:
-      '@inquirer/external-editor': 1.0.3(@types/node@25.5.0)
+      '@inquirer/external-editor': 1.0.3(@types/node@18.19.130)
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       cli-cursor: 3.1.0
@@ -11265,7 +11268,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 25.5.0
+      '@types/node': 18.19.130
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -11719,7 +11722,7 @@ snapshots:
       schema-utils: 4.3.3
       webpack: 5.78.0(@swc/core@1.3.96)
 
-  mini-testbridge@1.0.7: {}
+  mini-testbridge@1.1.0: {}
 
   minimalistic-assert@1.0.1: {}
 
@@ -13509,7 +13512,7 @@ snapshots:
       buffer: 5.7.1
       through: 2.3.8
 
-  undici-types@7.18.2: {}
+  undici-types@5.26.5: {}
 
   unescape-js@1.1.4:
     dependencies:

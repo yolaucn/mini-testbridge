@@ -1,3 +1,5 @@
+const path = require('path')
+
 const config = {
   projectName: 'taro-react-miniprogram-example',
   date: '2024-3-22',
@@ -20,6 +22,9 @@ const config = {
   },
   framework: 'react',
   compiler: 'webpack5',
+  alias: {
+    '@': path.resolve(__dirname, '..', 'src')
+  },
   cache: {
     enable: false // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
   },
