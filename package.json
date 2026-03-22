@@ -1,6 +1,6 @@
 {
   "name": "mini-testbridge",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A lightweight testing bridge for WeChat Mini Programs",
   "main": "src/index.js",
   "keywords": [
