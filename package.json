@@ -1,9 +1,15 @@
 {
   "name": "@yolaucn/mini-testbridge",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight testing bridge for WeChat Mini Programs",
   "main": "src/index.js",
-  "keywords": ["miniprogram", "wechat", "testing", "automation", "bridge"],
+  "keywords": [
+    "miniprogram",
+    "wechat",
+    "testing",
+    "automation",
+    "bridge"
+  ],
   "author": "yolaucn",
   "license": "MIT",
   "repository": {
