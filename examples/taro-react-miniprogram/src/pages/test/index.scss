@@ -1,0 +1,141 @@
+.test-container {
+  padding: 40rpx;
+  min-height: 100vh;
+  background: #f8f8f8;
+}
+
+.test-title {
+  font-size: 60rpx;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+
+.test-subtitle {
+  font-size: 32rpx;
+  color: #666;
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+
+.test-section {
+  margin-bottom: 40rpx;
+  padding: 30rpx;
+  background: white;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+}
+
+.section-title {
+  font-size: 36rpx;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  display: block;
+}
+
+.test-btn {
+  width: 100%;
+  height: 80rpx;
+  background: #1aad19;
+  color: white;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15rpx;
+  font-size: 32rpx;
+  border: none;
+}
+
+.test-btn::after {
+  border: none;
+}
+
+.test-btn:active {
+  background: #179b16;
+}
+
+.test-btn:disabled {
+  background: #ccc;
+  color: #999;
+}
+
+.sequence-btn {
+  background: #007aff;
+}
+
+.sequence-btn:active {
+  background: #0056cc;
+}
+
+.info-btn {
+  background: #ff9500;
+}
+
+.info-btn:active {
+  background: #cc7700;
+}
+
+.clear-btn {
+  background: #ff3b30;
+}
+
+.clear-btn:active {
+  background: #cc2e26;
+}
+
+.registry-info {
+  margin-bottom: 40rpx;
+  padding: 30rpx;
+  background: white;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+}
+
+.registry-item {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+  display: block;
+}
+
+.test-results {
+  padding: 30rpx;
+  background: white;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+  max-height: 600rpx;
+  overflow-y: auto;
+}
+
+.no-results {
+  font-size: 28rpx;
+  color: #999;
+  text-align: center;
+  padding: 40rpx 0;
+  display: block;
+}
+
+.result-item {
+  font-size: 26rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+  padding: 10rpx;
+  background: #f5f5f5;
+  border-radius: 5rpx;
+  display: block;
+  line-height: 1.4;
+}
+
+.result-item.success {
+  border-left: 4rpx solid #1aad19;
+  background: #f0f9ff;
+}
+
+.result-item.error {
+  border-left: 4rpx solid #ff3b30;
+  background: #fff5f5;
+  color: #d73527;
+}

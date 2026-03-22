@@ -9,11 +9,28 @@
 - 🔧 简单易用的 API
 - 🎯 支持元素查找和操作
 - ⚡ 异步操作支持
+- 📝 完整的 TypeScript 支持
 
 ## 安装
 
 ```bash
 npm install mini-testbridge
+```
+
+## TypeScript 支持
+
+本库提供完整的 TypeScript 类型定义，无需额外安装 `@types` 包。
+
+```typescript
+import { register, tap, input, run, TestElement } from 'mini-testbridge'
+
+// 类型安全的元素注册
+const element: TestElement = {
+  tap: () => console.log('clicked'),
+  input: (value: string) => console.log('input:', value)
+}
+
+register('my-element', element)
 ```
 
 ## 发布流程

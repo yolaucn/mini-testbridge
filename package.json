@@ -3,12 +3,14 @@
   "version": "1.0.7",
   "description": "A lightweight testing bridge for WeChat Mini Programs",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "keywords": [
     "miniprogram",
     "wechat",
     "testing",
     "automation",
-    "bridge"
+    "bridge",
+    "typescript"
   ],
   "author": "yolaucn",
   "license": "MIT",
